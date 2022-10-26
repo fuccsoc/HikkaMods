@@ -28,7 +28,7 @@ from .. import loader, utils
 from ..inline.types import InlineCall
 
 logger = logging.getLogger(__name__)
-logging.getLogger("pylast").setLevel(logging.INFO)
+logging.getLogger("pylast").setLevel(logging.ERROR)
 
 
 @loader.tds
