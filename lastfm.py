@@ -1,4 +1,4 @@
-__version__ = (1, 0, 1)
+__version__ = (1, 0, 2)
 
 # powered by hikari's love to fuccsoc.
 
@@ -47,9 +47,9 @@ class LastFMMod(loader.Module):
         "success_auth": "Authofuckingrized successfully. Woo-Hoo!!",
         "user_not_found": "Fucking user fucking not fucking found fuck.",
         "user_have_no_scrobbles": "This fucking user is fucking as fuck so there's fucking nothing to fucking display. Suck it.",
-        "now_playing": '<emoji document_id=5212941939053175244>🎧</emoji>Now playing: <a href="{}"><b><i>{} - {}</i></b></a>',
+        "now_playing": '<emoji document_id=5212941939053175244>🎧</emoji> Now playing: <a href="{}"><b><i>{} - {}</i></b></a>',
         "file_not_found": (
-            '<emoji document_id=5212941939053175244>🎧</emoji>Now playing: <a href="{}"><b><i>{} - {}</i></b></a>\n\n'
+            '<emoji document_id=5212941939053175244>🎧</emoji> Now playing: <a href="{}"><b><i>{} - {}</i></b></a>\n\n'
             "<code>We didn't found an mp3 file. Check if you started dialog with </code>@LossLessRobot <code>and try again.</code>"
         ),
         "unauth_success": "Unauthofuckingrizing successfully. Fuck off, bitch."
