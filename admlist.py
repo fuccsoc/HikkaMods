@@ -3,17 +3,12 @@ __version__ = (1, 0, 1)
 # powered by hikari's love to fuccsoc.
 
 # meta developer: @fuccsoc_will_be_free
-# scope: hikka_only
-# scope: hikka_min 1.2.10
-# requires: pylast
 
 import asyncio
-import json
 import logging
 from telethon import TelegramClient
 
 from telethon.tl import types, functions
-from telethon.errors import FloodWaitError
 
 from .. import loader, utils
 
