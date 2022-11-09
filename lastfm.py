@@ -1,4 +1,4 @@
-__version__ = (1, 1, 0)
+__version__ = (1, 1, 1)
 
 # powered by hikari's love to fuccsoc.
 
@@ -51,6 +51,7 @@ class LastFMMod(loader.Module):
             "<code>We didn't found an mp3 file. Check if you started dialog with </code>@LossLessRobot <code>and try again.</code>"
         ),
         "unauth_success": "Unauthofuckingrizing successfully. Fuck off, bitch.",
+        "processing": "<code>Processing your request...</code>",
     }
 
     def __init__(self):
@@ -202,6 +203,7 @@ class LastFMMod(loader.Module):
             )
         except:
             link = "#"
+        await utils.answer(message, self.strings("processing"))
         track_fl = await self.musicdl.dl(
             f"{track.artist.name} - {track.title}", only_document=True
         )
