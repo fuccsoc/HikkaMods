@@ -175,6 +175,7 @@ class LastFMMod(loader.Module):
     @tokenized
     async def lfnowcmd(self, message: Message):
         """Show current playback"""
+        await utils.answer(message, self.strings("processing"))
         args = utils.get_args(message)
         username = self.get("username")
         user_is_self = True
@@ -203,7 +204,6 @@ class LastFMMod(loader.Module):
             )
         except:
             link = "#"
-        await utils.answer(message, self.strings("processing"))
         track_fl = await self.musicdl.dl(
             f"{track.artist.name} - {track.title}", only_document=True
         )
