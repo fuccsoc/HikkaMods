@@ -36,7 +36,10 @@ class AdminListMod(loader.Module):
         owned_chats = []
         owned_usernamed_chats = []
 
-        for chat in result:
+        for dialog in result:
+            chat = dialog.entity
+            if isinstance(chat, types.User):
+                continue
             if getattr(chat, "migrated_to", False):
                 continue
             if chat.creator and getattr(chat, "username", False):
