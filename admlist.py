@@ -30,16 +30,13 @@ class AdminListMod(loader.Module):
     async def admlistcmd(self, message: types.Message):
         """Show adminned and owned chats chats."""
         self.client: TelegramClient
-        result = await self.client(functions.messages.GetAllChatsRequest(except_ids=[]))
-
-        chats = result.chats
+        result = await self.client.get_dialogs(limit=None)
 
         adminned_chats = []
         owned_chats = []
         owned_usernamed_chats = []
 
-        for chat in chats:
-            chat: types.Chat
+        for chat in result:
             if getattr(chat, "migrated_to", False):
                 continue
             if chat.creator and getattr(chat, "username", False):
