@@ -3,5 +3,6 @@
 </br>Modules for [Hikka Userbot](https://github.com/hikariatama/Hikka)
 </br>`Some shit by some shit of some shit`
 </br></br>
-<!--shitcodealert->
+<!--shitcodeaaaaaalert->
 <i>powered by hikari's love to fuccsoc</i>
+
