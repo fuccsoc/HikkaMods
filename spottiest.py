@@ -516,7 +516,7 @@ class SpotifyMod(loader.Module):
         self.sp_auth = spotipy.oauth2.SpotifyOAuth(
             client_id=self._client_id,
             client_secret=self._client_secret,
-            redirect_uri="https://thefsch.github.com/spotify/",
+            redirect_uri="https://thefsch.github.io/spotify/",
             scope=self.scope,
         )
         self.config = loader.ModuleConfig(
